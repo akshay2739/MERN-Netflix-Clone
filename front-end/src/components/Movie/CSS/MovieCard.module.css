@@ -1,0 +1,78 @@
+.MovieCard {
+	width: 19%;
+	margin: 5px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	width: 355px;
+}
+
+.MovieCard img {
+	width: 360px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.title {
+	position: absolute;
+	font-size: 1.1em;
+	font-weight: 600;
+	padding-left: 10px;
+	bottom: 0;
+	left: 0;
+	color: white;
+	width: 100%;
+}
+
+.titleOverlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(to bottom, transparent 50%, black 100%);
+	width: 100%;
+	height: 100%;
+}
+
+.MovieCard:hover {
+	transform: scale(1.5);
+	z-index: 1;
+	box-shadow: 1px 1px 68px 10px #e50914;
+}
+
+.movieDetails {
+	display: none;
+}
+
+.movieDetails p {
+	margin-right: 5px;
+}
+
+.MovieCard:hover .movieDetails {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 0.7em;
+	color: white;
+	padding-left: 10px;
+}
+
+.adultCert {
+	border: solid white 1px;
+	font-size: 0.6em;
+	padding: 2px 5px;
+}
+
+.MovieCard:hover .title {
+	position: absolute;
+	bottom: 20px;
+}
+
+@media (max-width: 768px) {
+	.MovieCard:hover {
+		transform: scale(1);
+		z-index: 1;
+		box-shadow: 1px 1px 68px 50px #e50914;
+	}
+}

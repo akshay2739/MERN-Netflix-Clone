@@ -1,0 +1,71 @@
+.movieDetailsContainer {
+	display: flex;
+	width: 80%;
+	margin: 70px auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.movieDetailsContainer img {
+	height: 700px;
+}
+
+.movieDetailsContainer .movieDetails {
+	width: 60%;
+}
+
+.movieDetails h1 {
+	margin: 20px 0;
+	font-size: 3em;
+	font-weight: 700;
+}
+
+.movieDetails p {
+	margin-bottom: 15px;
+	text-align: justify;
+}
+
+.overview {
+	font-size: 1.2em;
+}
+
+.extraDetails {
+	display: flex;
+	align-items: center;
+}
+
+.extraDetails p {
+	margin-right: 15px;
+}
+
+.adultCert {
+	border: solid white 1px;
+	font-size: 1.3em;
+	padding: 5px;
+}
+
+.label {
+	color: #8d8a8a;
+}
+
+@media (max-width: 768px) {
+	.movieDetailsContainer {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.movieDetailsContainer img {
+		height: 450px;
+		width: 90%;
+		max-width: 325px;
+		object-fit: cover;
+	}
+
+	.movieDetailsContainer .movieDetails {
+		width: 90%;
+	}
+
+	.extraDetails {
+		flex-wrap: wrap;
+	}
+}
