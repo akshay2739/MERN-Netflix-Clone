@@ -22,6 +22,10 @@ const MovieDetails = ({ history, match }) => {
 
 	genres = movie && movie.genres.map((genre) => ' ' + genre).toString()
 
+	if (movie) {
+		document.title = `Netflix | ${movie.title}`
+	}
+
 	return loading ? (
 		<Loader />
 	) : error ? (

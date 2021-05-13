@@ -9,6 +9,8 @@ import { addMovie } from '../../actions/movieAction'
 import { ADD_MOVIE_RESET } from '../../constants/movieConstants'
 
 const AddMovie = ({ history }) => {
+	document.title = `Netflix | Add Movie`
+
 	const dispatch = useDispatch()
 
 	const { loading, movie, error } = useSelector((state) => state.movieCreate)
