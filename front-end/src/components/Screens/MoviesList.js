@@ -12,6 +12,7 @@ const MoviesList = () => {
 	const { loading, movies, error } = moviesList
 
 	useEffect(() => {
+		document.title = 'Netflix | Movies'
 		window.scrollTo(0, 0)
 		dispatch(getAllMovies())
 	}, [dispatch])
